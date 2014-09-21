@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <title>template</title>
+    <!-- libraries-->
+    <script type="text/javascript" src="assets/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/d3js/3.3.11/d3.v3.min.js"></script>
+    <script type="text/javascript" src="assets/angular/1.2.3/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="assets/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <!-- custom files-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body ng-app="main" ng-controller="main">
+    <svg id="svg" width="1200px" height="1600px" viewBox="0 0 1200 1600" preserveAspectRatio="xMidYMid">
+      <defs>
+        <pattern id="p1-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="0" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p1-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="0" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p1-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="0" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p1-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="0" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p2-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-246" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p2-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-246" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p2-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-246" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p2-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-246" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p3-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-492" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p3-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-492" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p3-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-492" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p3-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-492" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p4-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-738" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p4-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-738" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p4-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-738" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p4-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-738" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p5-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-984" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p5-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-984" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p5-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-984" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p5-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-984" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p6-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1230" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p6-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1230" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p6-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1230" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p6-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1230" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p7-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1476" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p7-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1476" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p7-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1476" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p7-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1476" y="-756" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p8-1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1722" y="0" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p8-2" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1722" y="-252" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p8-3" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1722" y="-504" width="1954" height="1073"></image>
+        </pattern>
+        <pattern id="p8-4" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 236 244" preserveAspectRatio="none">
+          <image xlink:href="badge.png" x="-1722" y="-756" width="1954" height="1073"></image>
+        </pattern>
+      </defs>
+      <g transform="translate(100 100)"></g>
+    </svg>
+  </body>
+</html>
